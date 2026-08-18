@@ -17,9 +17,9 @@
 # Declare variables to be passed into your templates.
 
 images:
-  repository: us-central1-docker.pkg.dev/google-samples/microservices-demo
+  repository: docker.io/jnohec
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "847af2429a1e"
 
 serviceAccounts:
   # Specifies whether service accounts should be created.
@@ -61,7 +61,7 @@ securityContext:
 
 adService:
   create: true
-  name: adservice
+  name: online-boutique-adservice
   resources:
     requests:
       cpu: 200m
@@ -72,7 +72,7 @@ adService:
 
 cartService:
   create: true
-  name: cartservice
+  name: online-boutique-cartservice
   resources:
     requests:
       cpu: 200m
@@ -83,7 +83,7 @@ cartService:
 
 checkoutService:
   create: true
-  name: checkoutservice
+  name: online-boutique-checkoutservice
   resources:
     requests:
       cpu: 100m
@@ -94,7 +94,7 @@ checkoutService:
 
 currencyService:
   create: true
-  name: currencyservice
+  name: online-boutique-currencyservice
   resources:
     requests:
       cpu: 100m
@@ -105,7 +105,7 @@ currencyService:
 
 emailService:
   create: true
-  name: emailservice
+  name: online-boutique-emailservice
   resources:
     requests:
       cpu: 100m
@@ -116,7 +116,7 @@ emailService:
 
 frontend:
   create: true
-  name: frontend
+  name: online-boutique-frontend
   externalService: true
   cymbalBranding: false
   # One of: local, gcp, aws, azure, onprem, alibaba. When not set, defaults to "local" unless running in GKE, otherwise auto-sets to gcp.
@@ -141,7 +141,7 @@ frontend:
 
 loadGenerator:
   create: true
-  name: loadgenerator
+  name: online-boutique-loadgenerator
   checkFrontendInitContainer: true
   resources:
     requests:
@@ -153,7 +153,7 @@ loadGenerator:
 
 paymentService:
   create: true
-  name: paymentservice
+  name: online-boutique-paymentservice
   resources:
     requests:
       cpu: 100m
@@ -164,7 +164,7 @@ paymentService:
 
 productCatalogService:
   create: true
-  name: productcatalogservice
+  name: online-boutique-productcatalogservice
   # Specifies an extra latency to any request on productcatalogservice, by default no extra latency.
   extraLatency: ""
   resources:
@@ -177,7 +177,7 @@ productCatalogService:
 
 recommendationService:
   create: true
-  name: recommendationservice
+  name: online-boutique-recommendationservice
   resources:
     requests:
       cpu: 100m
@@ -188,7 +188,7 @@ recommendationService:
 
 shippingService:
   create: true
-  name: shippingservice
+  name: online-boutique-shippingservice
   resources:
     requests:
       cpu: 100m

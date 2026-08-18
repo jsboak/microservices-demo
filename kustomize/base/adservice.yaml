@@ -43,7 +43,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.5
+        image: docker.io/jnohec/online-boutique-adservice:847af2429a1e
         ports:
         - containerPort: 9555
         env:
