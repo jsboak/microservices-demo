@@ -30,7 +30,6 @@ resources:
 # - ../kustomize/components/cymbal-branding
 # - ../kustomize/components/google-cloud-operations
 # - ../kustomize/components/memorystore
-# - ../kustomize/components/network-policies
 # - ../kustomize/components/alloydb
 # - ../kustomize/components/shopping-assistant
 # - ../kustomize/components/spanner
